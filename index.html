@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XY服装设计作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .nav-link {
+            padding: 0.5rem 1rem;
+            color: #4B5563;
+            transition: color 0.2s;
+        }
+        .nav-link:hover {
+            color: #000;
+        }
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+        }
+        .work-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- 导航栏 -->
+        <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="#" class="text-xl font-bold">XY服装设计作品集</a>
+                <div class="space-x-6">
+                    <a href="#" class="nav-link">首页</a>
+                    <a href="#portfolio" class="nav-link">作品集</a>
+                    <a href="#about" class="nav-link">关于我</a>
+                    <a href="#contact" class="nav-link">联系方式</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 英雄区域 -->
+        <section class="hero-section relative h-screen">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 text-center">
+                    XY服装设计作品集
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-center">
+                    用针线勾勒梦想，以布料诠释灵感
+                </p>
+                <a href="#portfolio" class="bg-white text-black px-8 py-3 rounded-full text-lg hover:bg-gray-100 transition-colors duration-200">
+                    查看作品
+                </a>
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="portfolio" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12">作品集</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 作品1：春夏系列 -->
+                    <a href="collections/spring-summer.html" class="group">
+                        <div class="aspect-[3/4] rounded-lg mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-4.0.3" 
+                                 alt="春夏系列" 
+                                 class="work-image transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">春夏系列 - Urban Light</h3>
+                        <p class="text-gray-600">轻盈的亚麻与棉质面料，演绎都市男士的清爽时尚。</p>
+                    </a>
+                    <!-- 作品2：秋冬系列 -->
+                    <a href="collections/autumn-winter.html" class="group">
+                        <div class="aspect-[3/4] rounded-lg mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512353087810-25dfcd100962?ixlib=rb-4.0.3" 
+                                 alt="秋冬系列" 
+                                 class="work-image transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">秋冬系列 - Metropolitan</h3>
+                        <p class="text-gray-600">精选羊绒与羊毛呢面料，塑造都会绅士的优雅气质。</p>
+                    </a>
+                    <!-- 作品3：礼服系列 -->
+                    <a href="collections/formal.html" class="group">
+                        <div class="aspect-[3/4] rounded-lg mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3" 
+                                 alt="礼服系列" 
+                                 class="work-image transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">礼服系列 - Gentleman</h3>
+                        <p class="text-gray-600">意大利进口面料，打造完美廓形的现代绅士礼服。</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3" 
+                             alt="设计师照片" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-4xl font-bold mb-8">关于我</h2>
+                        <p class="text-lg text-gray-600">作为一名男装设计师，我专注于打造现代男士的优雅与力量。毕业于中央圣马丁艺术与设计学院，曾在多个国际时装周展示作品，致力于将欧美经典风格与现代审美完美融合。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12">联系我们</h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <form class="space-y-4">
+                            <input type="text" placeholder="您的姓名" class="w-full px-4 py-2 border rounded-lg">
+                            <input type="email" placeholder="您的邮箱" class="w-full px-4 py-2 border rounded-lg">
+                            <textarea rows="4" placeholder="留言内容" class="w-full px-4 py-2 border rounded-lg"></textarea>
+                            <button type="submit" class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">发送消息</button>
+                        </form>
+                        <div class="space-y-4 text-gray-600">
+                            <p>邮箱：contact@example.com</p>
+                            <p>电话：+86 123 456 789</p>
+                            <p>地址：北京市朝阳区设计师工作室</p>
+                            <div class="mt-8">
+                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3" 
+                                     alt="工作室环境" 
+                                     class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
